@@ -99,7 +99,7 @@ new Vue({
 
     //when pressed '←'
     backspace() {
-      if (!this.isStarted) {
+      if (!this.isStarted || this.isEqual) {
         return
       }
 
