@@ -116,6 +116,12 @@ new Vue({
 
       this.equation = this.equation.substring(0, this.equation.length - 1)
 
+      //After deleting,the last character is operator
+      let theLast = this.equation.substring(this.equation.length - 1, this.equation.length)
+      if (['+', '-', '×', '÷'].indexOf(theLast) > -1) {
+        this.isOperatorAdded = true
+      }
+
       if (this.equation === '') {
         this.equation = '0'
       }
