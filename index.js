@@ -73,12 +73,12 @@ new Vue({
       // console.log(result)
 
       let ans = eval(result)
-      this.equation = (ans < 1.0e9 ? parseFloat(ans.toFixed(9)):ans.toExponential(3)).toString()
+      this.equation = (ans < 1.0e9 ? parseFloat(ans.toFixed(9)) : ans.toExponential(3)).toString()
       this.isDecimalAdded = false
       this.isOperatorAdded = false
       this.isEqual = true
     },
-    //when pressed '+/-'
+    /* //when pressed '+/-'
     calculateToggle() {
       if (this.isOperatorAdded || !this.isStarted) {
         return
@@ -86,7 +86,7 @@ new Vue({
 
       this.equation = this.equation + '* -1'
       this.calculate()
-    },
+    }, */
     //when pressed '%'
     calculatePercentage() {
       if (this.isOperatorAdded || !this.isStarted) {
@@ -95,6 +95,30 @@ new Vue({
 
       this.equation = this.equation + '* 0.01'
       this.calculate()
+    },
+
+    //when pressed '←'
+    backspace() {
+      if (!this.isStarted) {
+        return
+      }
+
+      let toDelete = this.equation.substring(this.equation.length - 1, this.equation.length)
+      //Delete dot
+      if (this.isDecimalAdded && toDelete === '.') {
+        this.isDecimalAdded = false
+      }
+
+      //Delete operator
+      if (this.isOperatorAdded && ['+', '-', '×', '÷'].indexOf(toDelete) > -1) {
+        this.isOperatorAdded = false
+      }
+
+      this.equation = this.equation.substring(0, this.equation.length - 1)
+
+      if (this.equation === '') {
+        this.equation = '0'
+      }
     },
     //when pressed 'AC'
     clear() {
