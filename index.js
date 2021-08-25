@@ -60,7 +60,11 @@ new Vue({
       }
 
       //Added Operator
-      if (this.isOperator(character) && !this.isOperatorAdded) {
+      if (this.isOperator(character)) {
+        if (this.isOperatorAdded) {
+          this.backspace()
+        }
+
         this.equation += '' + character
         this.isDecimalAdded = false
         this.isOperatorAdded = true
@@ -97,7 +101,7 @@ new Vue({
       this.calculate()
     },
 
-    //when pressed '←'
+    //When pressed '←'
     backspace() {
       if (!this.isStarted || this.isEqual) {
         return
@@ -110,7 +114,7 @@ new Vue({
       }
 
       //Delete operator
-      if (this.isOperatorAdded && ['+', '-', '×', '÷'].indexOf(toDelete) > -1) {
+      if (this.isOperatorAdded && this.isOperator(toDelete)) {
         this.isOperatorAdded = false
       }
 
@@ -118,7 +122,7 @@ new Vue({
 
       //After deleting,the last character is operator
       let theLast = this.equation.substring(this.equation.length - 1, this.equation.length)
-      if (['+', '-', '×', '÷'].indexOf(theLast) > -1) {
+      if (this.isOperator(theLast)) {
         this.isOperatorAdded = true
       }
 
