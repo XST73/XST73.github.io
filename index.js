@@ -2,6 +2,7 @@ new Vue({
   el: '#app',
   data: {
     equation: '0',
+    isDecimalAddedOriginal: false,
     isDecimalAdded: false,
     isOperatorAdded: false,
     isStarted: false,
@@ -18,6 +19,7 @@ new Vue({
       if (this.equation === '0' && !this.isOperator(character)) {
         if (character === '.') {
           this.equation += '' + character
+          this,isDecimalAddedOriginal = this.isDecimalAdded
           this.isDecimalAdded = true
         } else {
           this.equation = '' + character
@@ -31,11 +33,13 @@ new Vue({
       if (!this.isOperator(character)) {
         if (this.isEqual) {
           this.equation = '0'
+          this.isDecimalAddedOriginal = false
           this.isDecimalAdded = false
           this.isOperatorAdded = false
           this.isEqual = false
           if (character === '.') {
             this.equation += '' + character
+            this.isDecimalAddedOriginal = this.isDecimalAdded
             this.isDecimalAdded = true
           } else {
             this.equation = '' + character
@@ -49,6 +53,7 @@ new Vue({
         }
 
         if (character === '.') {
+          this.isDecimalAddedOriginal = this.isDecimalAdded
           this.isDecimalAdded = true
           this.isOperatorAdded = true
         } else {
@@ -61,14 +66,21 @@ new Vue({
 
       //Added Operator
       if (this.isOperator(character)) {
-        if (this.isOperatorAdded) {
+        if (this.isOperatorAdded && !this.isDecimalAdded) {
           this.backspace()
+          this.equation += '' + character
+          this.isDecimalAddedOriginal = this.isDecimalAdded
+          this.isDecimalAdded = false
+          this.isOperatorAdded = true
+          this.isEqual = false
+        } else if (!this.isOperatorAdded) {
+          this.equation += '' + character
+          this.isDecimalAddedOriginal = this.isDecimalAdded
+          this.isDecimalAdded = false
+          this.isOperatorAdded = true
+          this.isEqual = false
         }
 
-        this.equation += '' + character
-        this.isDecimalAdded = false
-        this.isOperatorAdded = true
-        this.isEqual = false
       }
     },
     //when pressed '='
@@ -78,6 +90,7 @@ new Vue({
 
       let ans = eval(result)
       this.equation = (ans < 1.0e9 ? parseFloat(ans.toFixed(9)) : ans.toExponential(3)).toString()
+      this.isDecimalAddedOriginal = this.isDecimalAdded
       this.isDecimalAdded = false
       this.isOperatorAdded = false
       this.isEqual = true
@@ -103,7 +116,7 @@ new Vue({
 
     //When pressed '←'
     backspace() {
-      if (!this.isStarted || this.isEqual) {
+      if (this.isEqual) {
         return
       }
 
@@ -111,11 +124,13 @@ new Vue({
       //Delete dot
       if (this.isDecimalAdded && toDelete === '.') {
         this.isDecimalAdded = false
+        this.isOperatorAdded = false
       }
 
       //Delete operator
       if (this.isOperatorAdded && this.isOperator(toDelete)) {
         this.isOperatorAdded = false
+        this.isDecimalAdded = this.isDecimalAddedOriginal
       }
 
       this.equation = this.equation.substring(0, this.equation.length - 1)
@@ -133,6 +148,7 @@ new Vue({
     //when pressed 'AC'
     clear() {
       this.equation = '0'
+      this.isDecimalAddedOriginal = false
       this.isDecimalAdded = false
       this.isOperatorAdded = false
       this.isStarted = false
