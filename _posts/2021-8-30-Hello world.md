@@ -4,7 +4,7 @@ title: Hello world
 tags: Hello_world
 key: first_blog
 author: X73
-mode: immersive
+<!-- mode: immersive -->
 header:
   theme: dark
 article_header:
