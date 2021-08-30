@@ -24,7 +24,7 @@ titles:
   fr-LU   : *FR
   # @end locale config
 key: page-about
-<!-- mode: immersive -->
+mode: immersive
 header:
   theme: dark
 article_header:
