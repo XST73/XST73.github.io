@@ -2,6 +2,8 @@
 layout: article
 title: Hello world
 tags: Hello_world
+lightbox: true
+show_author_profile: true
 key: first_blog
 author: X73
 mode: immersive
