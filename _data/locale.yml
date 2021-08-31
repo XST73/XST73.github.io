@@ -3,7 +3,7 @@
 ########################
 en: &EN
   SUBSCRIBE               : "Subscribe"
-  READMORE                : "Read more"
+  READMORE                : "Read more..."
   SEARCH                  : "Search"
   CANCEL                  : "Cancel"
   VIEWS                   : "views"
@@ -34,7 +34,7 @@ en-AU:
 ########################
 zh-Hans: &ZH_HANS
   SUBSCRIBE               : "订阅"
-  READMORE                : "阅读更多"
+  READMORE                : "阅读更多..."
   SEARCH                  : "搜索"
   CANCEL                  : "取消"
   VIEWS                   : "阅读"
@@ -63,7 +63,7 @@ zh-SG:
 ########################
 zh-Hant: &ZH_HANT
   SUBSCRIBE               : "訂閱"
-  READMORE                : "閱讀更多"
+  READMORE                : "閱讀更多..."
   SEARCH                  : "搜索"
   CANCEL                  : "取消"
   VIEWS                   : "閱讀"
@@ -90,7 +90,7 @@ zh-HK:
 ########################
 ko: &KO
   SUBSCRIBE               : "구독하기"
-  READMORE                : "더보기"
+  READMORE                : "더보기..."
   SEARCH                  : "검색"
   CANCEL                  : "취소"
   VIEWS                   : "조회"
@@ -115,7 +115,7 @@ ko-KR:
 ########################
 fr: &FR
   SUBSCRIBE               : "S'abonner"
-  READMORE                : "Plus"
+  READMORE                : "Plus..."
   SEARCH                  : "Recherche"
   CANCEL                  : "Annuler"
   VIEWS                   : "vues"
