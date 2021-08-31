@@ -90,5 +90,5 @@ System.out.println("hello wprld!");
 
 ## One more thing
 
-好的，你现在可以离开这个界面了[👋](/old/Calculators.html)
+好的，你现在可以离开这个界面了[👋](/Front-end_exercises/Calculators/Calculators.html){:.button.button--secondary.button--pill}
 

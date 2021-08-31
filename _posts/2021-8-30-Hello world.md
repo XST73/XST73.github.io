@@ -19,7 +19,7 @@ article_header:
 
 Hello world! :star:
 
-![ae19f402f8e758fea87d46b4d044d6ce.jpg](https://i.loli.net/2021/01/20/FiPHh8ou1vR2djT.jpg)
+![ae19f402f8e758fea87d46b4d044d6ce.jpg](https://i.loli.net/2021/01/20/FiPHh8ou1vR2djT.jpg){:.rounded}
 
 
 

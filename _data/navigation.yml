@@ -97,4 +97,4 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /old/Calculators.html
+    url: /Front-end_exercises/Calculators/Calculators.html
