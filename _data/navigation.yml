@@ -1,21 +1,21 @@
 header:
   - titles:
       # @start locale config
-      en      : &EN       Home
+      en      : &EN       <i class="fas fa-home"></i> Home
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  主页
+      zh-Hans : &ZH_HANS  <i class="fas fa-home"></i> 主页
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  主頁
+      zh-Hant : &ZH_HANT  <i class="fas fa-home"></i> 主頁
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       홈
+      ko      : &KO       <i class="fas fa-home"></i> 홈
       ko-KR   : *KO
-      fr      : &FR       Accueil
+      fr      : &FR       <i class="fas fa-home"></i> Accueil
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
@@ -26,21 +26,21 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Archive
+      en      : &EN       <i class="fas fa-inbox"></i> Archive
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
+      zh-Hans : &ZH_HANS  <i class="fas fa-inbox"></i> 归档
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  歸檔
+      zh-Hant : &ZH_HANT  <i class="fas fa-inbox"></i> 歸檔
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       아카이브
+      ko      : &KO       <i class="fas fa-inbox"></i> 아카이브
       ko-KR   : *KO
-      fr      : &FR       Archives
+      fr      : &FR       <i class="fas fa-inbox"></i> Archives
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
@@ -51,21 +51,21 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       <i class="fas fa-user-astronaut"></i> About
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
+      zh-Hans : &ZH_HANS  <i class="fas fa-user-astronaut"></i> 关于
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
+      zh-Hant : &ZH_HANT  <i class="fas fa-user-astronaut"></i> 關於
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       소개
+      ko      : &KO       <i class="fas fa-user-astronaut"></i> 소개
       ko-KR   : *KO
-      fr      : &FR       À propos
+      fr      : &FR       <i class="fas fa-user-astronaut"></i> À propos
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
@@ -76,21 +76,21 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Calculators
+      en      : &EN       <i class="fas fa-calculator"></i> Calculators
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  计算器
+      zh-Hans : &ZH_HANS  <i class="fas fa-calculator"></i> 计算器
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  計算機
+      zh-Hant : &ZH_HANT  <i class="fas fa-calculator"></i> 計算機
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       계산자
+      ko      : &KO       <i class="fas fa-calculator"></i> 계산자
       ko-KR   : *KO
-      fr      : &FR       Calculateur.
+      fr      : &FR       <i class="fas fa-calculator"></i> Calculateur.
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
