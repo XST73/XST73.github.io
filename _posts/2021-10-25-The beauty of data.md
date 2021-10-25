@@ -5,9 +5,6 @@ tags: ["Activities","works","others"]
 lightbox: true
 key: data
 cover: https://i.loli.net/2021/10/25/GeiuMUL4o82SflD.png
-mode: immersive
-header:
-  theme: dark
 article_header:
   type: cover
   image:
