@@ -76,25 +76,25 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       <i class="fas fa-calculator"></i> Calculators
+      en      : &EN       <i class="fas fa-star"></i> Some stuff
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  <i class="fas fa-calculator"></i> 计算器
+      zh-Hans : &ZH_HANS  <i class="fas fa-star"></i> 一些玩意儿
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  <i class="fas fa-calculator"></i> 計算機
+      zh-Hant : &ZH_HANT  <i class="fas fa-star"></i> 一些玩意兒
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       <i class="fas fa-calculator"></i> 계산자
+      ko      : &KO       <i class="fas fa-star"></i> 약간의 물건
       ko-KR   : *KO
-      fr      : &FR       <i class="fas fa-calculator"></i> Calculateur.
+      fr      : &FR       <i class="fas fa-star"></i> Quelques gadgets pour
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /Front-end_exercises/Calculators/Calculators.html
+    url: /some_stuff.html

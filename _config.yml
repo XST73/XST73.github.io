@@ -198,6 +198,10 @@ exclude:
   - /test
   - /vendor
 
+collections:
+  some_stuff:
+    output: true
+
 defaults:
   - scope:
       path: ""
