@@ -4,7 +4,7 @@ title: Snowy2.0 环境配置 & 初步启动
 tags: ["works","java","others"]
 lightbox: true
 show_author_profile: true
-key: schedule_python
+key: the_snowy2_environment_configuration
 author: X73
 mode: immersive
 header:
